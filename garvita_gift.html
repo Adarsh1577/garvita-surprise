@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Garvita 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      margin: 20px;
+      display: none;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .emoji {
+      font-size: 1.4rem;
+    }
+
+    @keyframes hearts {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-600px); opacity: 0; }
+    }
+
+    .heart {
+      position: fixed;
+      bottom: 0;
+      font-size: 2rem;
+      color: #ff5e78;
+      animation: hearts 8s infinite;
+    }
+
+    .heart:nth-child(2) { left: 20%; animation-delay: 1s; }
+    .heart:nth-child(3) { left: 40%; animation-delay: 2s; }
+    .heart:nth-child(4) { left: 60%; animation-delay: 3s; }
+    .heart:nth-child(5) { left: 80%; animation-delay: 4s; }
+
+    .gift-box {
+      cursor: pointer;
+      background: url('https://cdn-icons-png.flaticon.com/512/1049/1049161.png') no-repeat center/contain;
+      width: 120px;
+      height: 120px;
+      margin-top: 40px;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/11/audio_3c6d6c0a50.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="gift-box" onclick="revealGift()" title="Click to open the gift 🎁"></div>
+
+  <div class="card" id="giftCard">
+    <h1>💌 To Garvita Varshney</h1>
+    <p>
+      My beautiful Garvita,<br><br>
+      There are some people who walk into your life and change it for the better, forever. You are, without a doubt, one of those extraordinary souls for me. 🌟<br><br>
+      When I think of our friendship, my heart fills with so much gratitude. You've been more than just a friend; you've been my confidante, my biggest cheerleader, and the sister I was always meant to have. 💖<br><br>
+      You've seen me at my best, and gracefully stood by me at my worst, never judging, always understanding. 🤝<br><br>
+      Your kindness, your strength, and your unwavering belief in me have shaped who I am today. You've not just been present in my life; you've enriched it in ways words can barely capture. ✨<br><br>
+      This isn't just a webpage; it's a small attempt to show you how profoundly you're loved and cherished. 💝<br><br>
+      Thank you for being you, for every laugh, every tear, and for a friendship that is truly one of life's greatest blessings. 🙏<br><br>
+      Forever and always,<br>
+      <strong>Your Adarsh</strong> 🫶
+    </p>
+  </div>
+
+  <div class="footer">Made with love 💕</div>
+  <div class="heart">❤️</div>
+  <div class="heart">💖</div>
+  <div class="heart">💗</div>
+  <div class="heart">💘</div>
+  <div class="heart">💕</div>
+
+  <script>
+    function revealGift() {
+      document.querySelector('.gift-box').style.display = 'none';
+      document.getElementById('giftCard').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
